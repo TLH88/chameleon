@@ -14,7 +14,7 @@
         <description lang="en_GB">Keeps the Chameleon skin and its helper add-on up to date.</description>
     </extension>
 </addon>
-<addon id="script.chameleon.helper" name="Chameleon Helper" version="0.2.17" provider-name="Foundry 88 Labs">
+<addon id="script.chameleon.helper" name="Chameleon Helper" version="0.2.18" provider-name="Foundry 88 Labs">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -31,7 +31,7 @@
         <description lang="en_GB">Applies look-and-feel presets, builds custom colour themes, and keeps Trakt, Real-Debrid, Premiumize, YouTube and metadata API credentials in one place, pushing them to installed add-ons through small JSON connector files.</description>
     </extension>
 </addon>
-<addon id="skin.chameleon" name="Chameleon" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.1.5">
+<addon id="skin.chameleon" name="Chameleon" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.1.6">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
