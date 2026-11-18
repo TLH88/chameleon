@@ -31,7 +31,7 @@
         <description lang="en_GB">Applies look-and-feel presets, builds custom colour themes, and keeps Trakt, Real-Debrid, Premiumize, YouTube and metadata API credentials in one place, pushing them to installed add-ons through small JSON connector files.</description>
     </extension>
 </addon>
-<addon id="skin.chameleon" name="Chameleon" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.1.1">
+<addon id="skin.chameleon" name="Chameleon" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.1.2">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
