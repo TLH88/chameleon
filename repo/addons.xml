@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.chameleon" name="Chameleon Repository" version="1.0.0" provider-name="Foundry 88 Labs">
+    <extension point="xbmc.addon.repository" name="Chameleon Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/TLH88/chameleon/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/TLH88/chameleon/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/TLH88/chameleon/main/repo/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Updates for the Chameleon skin and helper.</summary>
+        <description lang="en_GB">Keeps the Chameleon skin and its helper add-on up to date.</description>
+    </extension>
+</addon>
+<addon id="script.chameleon.helper" name="Chameleon Helper" version="0.2.0" provider-name="Foundry 88 Labs">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py"/>
+    <extension point="xbmc.python.pluginsource" library="plugin.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <summary lang="en_GB">Presets, colours and one-time account sign-in for the Chameleon skin.</summary>
+        <description lang="en_GB">Applies look-and-feel presets, builds custom colour themes, and keeps Trakt, Real-Debrid, Premiumize, YouTube and metadata API credentials in one place, pushing them to installed add-ons through small JSON connector files.</description>
+    </extension>
+</addon>
+<addon id="skin.chameleon" name="Chameleon" provider-name="Foundry 88 Labs (based on Arctic Horizon 2 by jurialmunkey, 2.1 by DeFiNiek)" version="0.1.0">
+    <requires>
+        <import addon="xbmc.gui" version="5.17.0" />
+        <import addon="script.skinshortcuts" version="0.4.0" />
+        <import addon="script.chameleon.helper" version="0.1.0" />
+        <import addon="script.skinvariables" version="1.0.0" />
+        <import addon="script.texturemaker" version="0.2.8" />
+        <import addon="plugin.video.themoviedb.helper" version="5.1.11~nexus" />
+        <import addon="resource.images.weathericons.white" version="0.0.1" />
+        <import addon="resource.images.studios.coloured" version="0.0.1" />
+        <import addon="resource.font.robotocjksc" version="0.0.1" />
+    </requires>
+    <extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="1" point="xbmc.gui.skin">
+        <res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Arctic Horizon 2 with one-click look presets, custom colours, a Fen Light and NAS home, and a What to Watch picker.</summary>
+        <description lang="en">Chameleon is a personal fork of Arctic Horizon 2.1 (jurialmunkey, DeFiNiek). It adds look and feel presets, generated colour themes, a home menu built around Fen Light, Trakt and a NAS library, and hooks into Chameleon Helper for one-time account sign-in and the What to Watch picker.</description>
+        <platform>all</platform>
+        <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+        <forum />
+        <source />
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
